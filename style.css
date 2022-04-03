@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+:root {
+    --background-color: #282a36;
+    --green-color: #50fa7b;
+    --orange-color: #ffb86c;
+    --secondary-background-color: #44475a;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--background-color);
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
 /* Header */
 
 header {
-    background-color: grey;
+    background-color: var(--secondary-background-color);
+    box-shadow: 0px 0px 8px black;
     display: flex;;
     flex-direction: column;
     justify-content: space-between;
@@ -18,12 +33,12 @@ header {
 
 nav {
     width: 100%;
+    border-bottom: 2px solid var(--green-color);
 }
 
 .menu-navigation {
     display: flex;
     list-style: none;
-    background-color: pink;
 }
 
 .menu-navigation li {
@@ -35,15 +50,21 @@ nav {
     text-decoration: none;
     text-align: center;
     width: 100%;
+    padding: 10px;
+    color: var(--green-color);
 }
 
 /* header title */
 
 .header-title-container {
     display: inline-block;
-    border: 1px solid white;
     text-align: center;
     margin-top: 75px;
+}
+
+.header-title-container h1 {
+    font-size: 28pt;
+    color: var(--orange-color);
 }
 
 /* Header Profile Image */
@@ -51,7 +72,13 @@ nav {
 #profile-image {
     width: 150px;
     border-radius: 50%;
-    outline: 2px solid white;
+    outline: 2px solid var(--green-color);
     position: relative;
     top: 75px;
+}
+
+/* main-container */
+
+main {
+    margin-top: 75px;
 }
