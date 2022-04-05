@@ -80,5 +80,14 @@ nav {
 /* main-container */
 
 main {
-    margin-top: 75px;
+    margin-top: 80px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    color: var(--green-color);
+    padding: 20px;
 }
