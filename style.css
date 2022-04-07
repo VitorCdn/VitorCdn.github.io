@@ -65,8 +65,9 @@ nav {
 .header-title-container h1 {
     font-size: 28pt;
     color: var(--green-color);
-    padding: 8px;
+    padding: 20px;
     box-shadow: 0px 0px 5px black;
+    margin-bottom: 5px;
 }
 
 .header-title-container h3 {
@@ -92,6 +93,10 @@ main {
 
 .section-projects {
     padding: 8px;
+}
+
+.section-title {
+    color: var(--green-color);
 }
 
 .project-container {
@@ -122,4 +127,30 @@ footer {
     background-color: var(--secondary-background-color);
     color: var(--green-color);
     padding: 20px;
+}
+
+/* Responsividade */
+
+@media screen and (min-width: 500px) {
+    #profile-image {
+        width: 200px;
+        top: 100px;
+    }
+
+    .main-container {
+        margin: 110px auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    nav {
+        width: 1500px;
+        border: 2px solid var(--green-color);
+    }
+
+    .main-container {
+        width: 1500px;
+    }
+    
 }
