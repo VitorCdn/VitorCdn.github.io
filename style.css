@@ -91,6 +91,8 @@ main {
     margin-bottom: 10px;
 }
 
+/* Projects section */
+
 .section-projects {
     padding: 8px;
 }
@@ -120,6 +122,36 @@ main {
     border-radius: 8px;
 }
 
+/* Contact section */
+
+.contact-menu {
+    display: inline-block;
+    list-style: none;
+    background-color: var(--secondary-background-color);
+    padding: 10px;
+}
+
+.contact-menu img {
+    width: 32px;
+    margin-right: 5px;
+}
+
+.contact-menu a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition-property: color, border-color;
+    transition-duration: 0.8s;;
+}
+
+.contact-menu a:hover {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
 /* Footer */
 
 footer {
@@ -129,7 +161,7 @@ footer {
     padding: 20px;
 }
 
-/* Responsividade */
+/* Responsivity */
 
 @media screen and (min-width: 500px) {
     #profile-image {
