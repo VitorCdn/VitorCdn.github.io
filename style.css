@@ -99,6 +99,9 @@ main {
 
 .section-title {
     color: var(--green-color);
+    text-align: center;
+    border-bottom: 4px solid var(--green-color);
+    font-size: 30pt;
 }
 
 .project-container {
@@ -125,10 +128,12 @@ main {
 /* Contact section */
 
 .contact-menu {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     list-style: none;
     background-color: var(--secondary-background-color);
     padding: 10px;
+    border-radius: 10px;
 }
 
 .contact-menu img {
@@ -163,7 +168,7 @@ footer {
 
 /* Responsivity */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
     #profile-image {
         width: 200px;
         top: 100px;
@@ -171,6 +176,11 @@ footer {
 
     .main-container {
         margin: 110px auto;
+    }
+
+    .contact-menu {
+        width: 500px;
+        margin: auto;
     }
 }
 
@@ -183,6 +193,16 @@ footer {
 
     .main-container {
         width: 1500px;
+    }
+
+    .contact-menu {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 1200px;
+    }
+
+    .contact-menu a {
+        width: 350px;
     }
     
 }
