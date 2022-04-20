@@ -104,9 +104,10 @@ main {
     font-size: 30pt;
 }
 
+/* Projects container */
+
 .project-container {
     background-color: var(--secondary-background-color);
-    border-radius: 10px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -132,8 +133,6 @@ main {
     flex-direction: column;
     list-style: none;
     background-color: var(--secondary-background-color);
-    padding: 10px;
-    border-radius: 10px;
 }
 
 .contact-menu img {
@@ -149,7 +148,7 @@ main {
     align-items: center;
     padding: 5px;
     transition-property: color, border-color;
-    transition-duration: 0.8s;;
+    transition-duration: 0.8s;
 }
 
 .contact-menu a:hover {
@@ -178,7 +177,7 @@ footer {
         margin: 110px auto;
     }
 
-    .contact-menu {
+    .contact-menu, #contact {
         width: 500px;
         margin: auto;
     }
@@ -198,7 +197,10 @@ footer {
     .contact-menu {
         flex-direction: row;
         justify-content: space-around;
-        width: 1200px;
+    }
+
+    #contact, .contact-menu {
+        width: 100%;
     }
 
     .contact-menu a {
